@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>
+        Social Media Platform
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    />
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <h2>
+            Mini Social Media
+        </h2>
+
+        <div>
+
+            <span id="userInfo"></span>
+
+            <button
+                id="logoutBtn"
+                class="hidden"
+            >
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+    <div class="container">
+      <div class="profile-card">
+
+<h3 id="profileName">
+User
+</h3>
+
+<p id="followersCount">
+Followers: 0
+</p>
+
+<button onclick="followUser()">
+Follow 👥
+</button>
+
+</div>
+
+        <!-- AUTH SECTION -->
+
+        <div class="auth-box">
+
+            <h2>
+                Register / Login
+            </h2>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter Name"
+            />
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter Email"
+            />
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter Password"
+            />
+
+            <button onclick="registerUser()">
+                Register
+            </button>
+
+            <button onclick="loginUser()">
+                Login
+            </button>
+
+        </div>
+
+        <!-- CREATE POST -->
+
+        <div class="post-box">
+
+            <h2>
+                Create Post
+            </h2>
+
+            <textarea
+                id="postInput"
+                placeholder="What's on your mind?"
+            ></textarea>
+
+            <button onclick="createPost()">
+                Post
+            </button>
+
+        </div>
+
+        <!-- POSTS CONTAINER -->
+
+        <div id="postsContainer">
+
+        </div>
+
+    </div>
+
+    <!-- JS FILE -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
